@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 620px;
+	height: 340px;
+	background-image: url(backgrounds/winter-scene.png);
+	background-size: 640px 360px;
+	background-repeat: no-repeat;
+}
+
+#background {
+	position: relative;
+}
+
+#card1>img {
+	height: 180px;
+	width: 320px;
+	margin-top: 3%;
+	margin-left: 50%;
+}
+
+#card2 {
+	position: absolute;
+	z-index: 1;
+	left: 48%;
+	top: 80%;
+}
+
+#card2>img {	
+	height: 120px;
+	width: 320px;
+}
+
+table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#week {
+	position: absolute;
+	top: 92.5%;
+	left: 55.5%;
+	z-index: 2;
+}
+
+/*#week table {
+	border: 1px solid;
+}*/
+
+#week td {
+	padding: 2px 5px;
+	white-space: nowrap;
+}
+
+#week img {
+	width: 30px;
+	height: 30px;
+}
