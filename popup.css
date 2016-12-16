@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: "Microsoft YaHei"
 }
 
 body{
@@ -42,16 +43,16 @@ table {
 #week {
 	position: absolute;
 	top: 92.5%;
-	left: 55.5%;
+	left: 56.6%;
 	z-index: 2;
 }
 
-/*#week table {
+#week table {
 	border: 1px solid;
-}*/
+}
 
 #week td {
-	padding: 2px 5px;
+	padding: 2px 15px;
 	white-space: nowrap;
 }
 

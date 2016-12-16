@@ -17,27 +17,25 @@ weekday[3]="Wed";
 weekday[4]="Thu";
 weekday[5]="Fri";
 weekday[6]="Sat";
-function showWeather(result){
+function showDailyWeather(result){
 	result = JSON.parse(result);
-	var list = result.list;
-
-	// week weather
+	var daily = result.results[0].daily;
 	var table = "<table>";
+	// table += "<tr>";
+	// for(var i in result.daily){
+	// 	var id = list[i].weather[0].icon;
+	// 	table += "<td><img src='icons/"+id+".png'></img></td>";	
+	// }
+	// table += "</tr>"
 	table += "<tr>";
-	for(var i = 1;i<list.length;i++){
-		var id = list[i].weather[0].icon;
-		table += "<td><img src='icons/"+id+".png'></img></td>";	
-	}
-	table += "</tr>"
-	table += "<tr>";
-	for(var i = 1;i<list.length;i++){
-		var d = new Date(list[i].dt*1000);
+	for(var i in daily){
+		var d = new Date(daily[i].date);
 		table += "<td>"+weekday[d.getDay()]+"</td>";
 	}
 	table += "</tr>";
 	table += "<tr>";
-	for(var i = 1;i<list.length;i++){
-		table += "<td>"+Math.round(list[i].temp.min-273.15)+"°C/"+Math.round(list[i].temp.max-273.15)+"°C</td>";	
+	for(var i in daily){
+		table += "<td>"+Math.round(daily[i].low)+"°C/"+Math.round(daily[i].high)+"°C</td>";	
 	}
 	table += "</tr>"
 	table += "</table>";
@@ -47,6 +45,8 @@ function showWeather(result){
 }
 
 var city = localStorage.city;
-city = city?city:"beijing";
-var url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q='+city+',china&lang=zh_cn&APPID=65d1bd8ddc51490ee98f0d478e91db85&cnt=5';
-httpRequest(url, showWeather);
+city = city?city:"北京";
+var url = "https://api.thinkpage.cn/v3/weather/now.json?key=iahvkbtk2wnfdv1k&location="+city+"&language=zh-Hans&unit=c";
+
+url = "https://api.thinkpage.cn/v3/weather/daily.json?key=iahvkbtk2wnfdv1k&location="+city+"&language=zh-Hans&unit=c&start=0&days=5"
+httpRequest(url, showDailyWeather);
