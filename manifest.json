@@ -18,6 +18,6 @@
 	},
 	"options_page": "options.html",
 	"permissions": [
-		"https://api.thinkpage.cn/v3/weather/*"
+		"http://api.openweathermap.org/data/2.5/forecast?q=*"
 	]
 }
