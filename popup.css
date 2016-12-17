@@ -16,6 +16,54 @@ body{
 	position: relative;
 }
 
+#now_week {
+	position: absolute;
+	z-index: 2;
+	left: 345px;
+	top: 35px;
+	font-size: 20px;
+	color: #0288D1;
+	font-weight: bold;
+}
+
+#now_temp {
+	position: absolute;
+	z-index: 2;
+	left: 420px;
+	top: 55px;
+	font-size: 70px;
+}
+
+#now_unit {
+	position: absolute;
+	z-index: 2;
+	left: 490px;
+	top: 70px;
+	font-size: 15px;
+}
+
+#now_city {
+	position: absolute;
+	z-index: 2;
+	left: 345px;
+	top: 140px;
+	font-size: 15px;
+	color: #877F6C;
+	font-weight: lighter;
+}
+
+#now_icon {
+	position: absolute;
+	z-index: 2;
+	left: 340px;
+	top: 60px;
+}
+
+#now_icon img {
+	width: 80px;
+	height: 80px;
+}
+
 #card1 {
 	position: absolute;
 	z-index: 1;
@@ -48,8 +96,9 @@ table {
 #hourly {
 	position: absolute;
 	top: 29px;
-	left: 517px;
+	left: 512px;
 	z-index: 2;
+	color: #FEDFE1;
 }
 
 /*#hourly table {
@@ -57,7 +106,7 @@ table {
 }*/
 
 #hourly td {
-	padding: 5px 3px;
+	padding: 5px 2px;
 	white-space: nowrap;
 }
 
@@ -71,6 +120,7 @@ table {
 	top: 204px;
 	left: 334px;
 	z-index: 2;
+	color: #877F6C;
 }
 
 /*#daily table {
