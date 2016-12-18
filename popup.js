@@ -28,7 +28,7 @@ function showNowWeather(result) {
 	document.getElementById("now_week").innerHTML = weekday[d.getDay()];
 
 	var temp = result.main.temp;
-	document.getElementById("now_temp").innerHTML = Math.round(temp-273.15);
+	document.getElementById("now_temp").innerHTML = Math.round(temp-273.15)+"<p>°</p>";
 
 	var city = result.name;
 	document.getElementById("now_city").innerHTML = city;
@@ -44,7 +44,7 @@ function showHourlyWeather(result) {
 		table += "<td><img src='icons/"+id+".png'></img></td>";
 		var d = new Date(list[i].dt*1000);
 		table += "<td>"+d.getHours()+"h</td>";
-		table += "<td>"+Math.round(list[i].main.temp-273.15)+"°C</td>";
+		table += "<td>"+Math.round(list[i].main.temp-273.15)+"°</td>";
 		table += "</tr>";
 	}
 	table += "</table>";
@@ -69,7 +69,7 @@ function showDailyWeather(result){
 	table += "</tr>";
 	table += "<tr>";
 	for(var i = 1;i<list.length;i++){
-		table += "<td>"+Math.round(list[i].temp.min-273.15)+"°C/"+Math.round(list[i].temp.max-273.15)+"°C</td>";	
+		table += "<td>"+Math.round(list[i].temp.min-273.15)+"°/"+Math.round(list[i].temp.max-273.15)+"°</td>";	
 	}
 	table += "</tr>"
 	table += "</table>";

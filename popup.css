@@ -7,7 +7,7 @@
 body{
 	width: 620px;
 	height: 340px;
-	background-image: url(backgrounds/winter-scene.png);
+	background-image: url(backgrounds/sunny.png);
 	background-size: 640px 360px;
 	background-repeat: no-repeat;
 }
@@ -30,16 +30,15 @@ body{
 	position: absolute;
 	z-index: 2;
 	left: 420px;
-	top: 55px;
-	font-size: 70px;
+	top: 60px;
+	font-size: 60px;
+	float: right;
 }
 
-#now_unit {
-	position: absolute;
-	z-index: 2;
-	left: 490px;
-	top: 70px;
-	font-size: 15px;
+#now_temp p {
+	font-size: 30px;
+	float: right;
+	margin-top: 9px;
 }
 
 #now_city {
@@ -56,12 +55,12 @@ body{
 	position: absolute;
 	z-index: 2;
 	left: 340px;
-	top: 60px;
+	top: 65px;
 }
 
 #now_icon img {
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 }
 
 #card1 {
@@ -90,6 +89,7 @@ body{
 
 table {
 	text-align: center;
+	vertical-align: middle;
 	border-collapse: collapse;
 }
 
@@ -106,7 +106,8 @@ table {
 }*/
 
 #hourly td {
-	padding: 5px 2px;
+	width: 25px;
+	height: 28px;
 	white-space: nowrap;
 }
 
@@ -117,8 +118,8 @@ table {
 
 #daily {
 	position: absolute;
-	top: 204px;
-	left: 334px;
+	top: 205px;
+	left: 330px;
 	z-index: 2;
 	color: #877F6C;
 }
@@ -128,8 +129,9 @@ table {
 }*/
 
 #daily td {
-	padding: 2px 5px;
 	white-space: nowrap;
+	width: 65px;
+	height: 25px;
 }
 
 #daily img {
