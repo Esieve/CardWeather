@@ -15,5 +15,5 @@ document.getElementById("save").onclick = function () {
 	(document.getElementsByTagName("body"))[0].replaceChild(result,save);
 	setTimeout(function() {
 		(document.getElementsByTagName('body'))[0].replaceChild(save,document.getElementById("result"));
-	},1000);
+	},1500);
 }
