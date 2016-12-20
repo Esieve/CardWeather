@@ -15,19 +15,19 @@ img {
 }
 
 #city {
-	margin-top: 1%;
+	margin-top: 30px;
 }
 
 #save {
-	margin-top: 2%;
+	margin-top: 15px;
 }
 
 #info {
-	margin-top: 25%;
+	margin-top: 28%;
 	color: #877F6C;
 }
 
 #result {
 	font-size: 16px;
-	margin-top: 2%;
+	margin-top: 15px;
 }
