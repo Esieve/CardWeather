@@ -114,16 +114,15 @@ table {
 #now {
 	position: absolute;
 	z-index: 2;
-	left: 243px;
-	top: 48px;
+	left: 240px;
+	top: 45px;
 	color: white;
-	text-align: left;
 	font-size: 15px;
 }
 
-/*#now table {
+/* #now table {
 	border: 1px solid;
-}*/
+} */
 
 #now td {
 	white-space: nowrap;
