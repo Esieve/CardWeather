@@ -8,6 +8,10 @@ body{
 	width: 320px;
 }
 
+table {
+	text-align: center;
+}
+
 #background {
 	position: relative;
 }
@@ -29,6 +33,34 @@ body{
 	height: 20px;
 	left: 290px;
 	top: 8px;
+}
+
+#card1 {
+	position: absolute;
+	z-index: 1;
+	top: 35px;
+}
+
+#card1>img {
+	height: 180px;
+	width: 320px;
+}
+
+#card2 {
+	position: absolute;
+	z-index: 1;
+	top: 210px;
+}
+
+#card3 {
+	position: absolute;
+	z-index: 1;
+	top: 325px;
+}
+
+#card2>img,#card3>img {	
+	height: 120px;
+	width: 320px;
 }
 
 #now_week {
@@ -104,45 +136,6 @@ body{
 	height: 20px;
 }
 
-#card1 {
-	position: absolute;
-	z-index: 1;
-	top: 35px;
-}
-
-#card1>img {
-	height: 180px;
-	width: 320px;
-}
-
-#card2 {
-	position: absolute;
-	z-index: 1;
-	top: 210px;
-}
-
-#card2>img {	
-	height: 120px;
-	width: 320px;
-}
-
-#card3 {
-	position: absolute;
-	z-index: 1;
-	top: 325px;
-}
-
-#card3>img {	
-	height: 120px;
-	width: 320px;
-}
-
-table {
-	text-align: center;
-	vertical-align: middle;
-	border-collapse: collapse;
-}
-
 #hourly {
 	position: absolute;
 	top: 225px;
@@ -159,11 +152,6 @@ table {
 	width: 60px;
 	height: 30px;
 	white-space: nowrap;
-}
-
-#hourly img {
-	width: 30px;
-	height: 30px;
 }
 
 #daily {
@@ -184,7 +172,7 @@ table {
 	height: 30px;
 }
 
-#daily img {
+#hourly img,#daily img {
 	width: 30px;
 	height: 30px;
 }

@@ -46,10 +46,6 @@ function showNowWeather(result) {
 	table += "<tr><td><img src='icons/humidity.png'></img></td><td>"+result.main.humidity+"%</td></tr>";
 	table += "<tr><td><img src='icons/windspeed.png'></img></td><td>"+Math.round(result.wind.speed)+"m/s</td></tr>";
 	table += "<tr><td><img src='icons/clouds.png'></img></td><td>"+result.clouds.all+"%</td></tr>";
-	// d = new Date(result.sys.sunrise*1000);
-	// table += "<tr><td><img src='icons/sunrise.png'></img></td><td>"+d+"</td></tr>";
-	// d = new Date(result.sys.sunset*1000);
-	// table += "<tr><td><img src='icons/sunset.png'></img></td><td>"+d+"</td></tr>";
 	table += "</table>";
 	document.getElementById("now").innerHTML = table;
 }
