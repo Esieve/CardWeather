@@ -1,4 +1,4 @@
-var city = (localStorage.city || "beijing");
+var city = (localStorage.city || "English only");
 document.getElementById("city").value=city;
 document.getElementById("save").onclick = function () {
 	var result = document.createElement("p");

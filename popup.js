@@ -104,11 +104,11 @@ var city = localStorage.city;
 city = city?city:"beijing";
 var url;
 
-url = 'http://api.openweathermap.org/data/2.5/weather?q='+city+',china&lang=zh_cn&APPID=65d1bd8ddc51490ee98f0d478e91db85&cnt=5';
+url = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&lang=en&APPID=65d1bd8ddc51490ee98f0d478e91db85&cnt=5';
 httpRequest(url, showNowWeather);
 
-url = 'http://api.openweathermap.org/data/2.5/forecast?q='+city+',china&lang=zh_cn&APPID=65d1bd8ddc51490ee98f0d478e91db85&cnt=5';
+url = 'http://api.openweathermap.org/data/2.5/forecast?q='+city+'&lang=en&APPID=65d1bd8ddc51490ee98f0d478e91db85&cnt=5';
 httpRequest(url, showHourlyWeather);
 
-url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q='+city+',china&lang=zh_cn&APPID=65d1bd8ddc51490ee98f0d478e91db85&cnt=5';
+url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q='+city+'&lang=en&APPID=65d1bd8ddc51490ee98f0d478e91db85&cnt=5';
 httpRequest(url, showDailyWeather);
